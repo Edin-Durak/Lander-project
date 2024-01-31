@@ -1,0 +1,362 @@
+/* 
+font-family: 'Inter', sans-serif; font styles imported with google font
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Mobile first */
+
+.header {
+  height: 351px;
+  margin: 0;
+  padding: 0;
+}
+.header-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  background: #1a1c1e;
+  padding: 32px 16px;
+  margin: 0;
+}
+
+.hero-paragraph {
+  color: #e2e2e6;
+
+  /* Mobile/Body/Large */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.btn-content {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.btn {
+  cursor: pointer;
+}
+.btn-red {
+  color: #ffecec;
+  background: #cc0000;
+  border-radius: 4px;
+  border-color: #65003314;
+
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* Desktop/label/large */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  margin-right: 16px;
+}
+.btn-red:hover {
+  /* M3/Elevation Dark/1 */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+.btn-red:focus {
+  outline: 4px solid #6500331f;
+}
+.btn-red:disabled,
+.btn-login:disabled {
+  color: #e3e3e31f;
+  background-color: #e2e2e6;
+}
+.btn-login {
+  display: flex;
+  padding: 10px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #9ecaff;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #8d9199;
+}
+.btn-login:hover {
+  background-color: #9ecaff14;
+}
+.btn-login:focus {
+  outline: 2px solid rgba(141, 145, 153, 0.12);
+}
+
+.heading-small {
+  color: #ababae;
+  margin-bottom: 8px;
+  /* Mobile/Title/Medium */
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+}
+.paragraph-light {
+  color: #ababae;
+
+  /* Mobile/Body/Medium */
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.footer {
+  background: #000;
+  padding: 32px 16px;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0px 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #e2e2e6;
+  text-align: center;
+
+  /* Mobile/Body/Medium */
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.2px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links .pipe {
+  color: #e2e2e6; /* Adjust color as needed */
+}
+
+.footer-paragraph {
+  text-align: center;
+  margin: 16px auto;
+  /* Mobile/Body/Small */
+  font-family: "Inter", sans-serif;
+  color: #909094;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 144.444% */
+  letter-spacing: 0.4px;
+}
+
+/* Media query for screens with a minimum width of 600px */
+@media (min-width: 600px) {
+  .header {
+    height: 584px;
+  }
+
+  .main-content {
+    padding: 32px 48px 38px;
+  }
+
+  .footer {
+    padding: 32px 48px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px; /* 100% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .footer-paragraph {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.4px;
+  }
+}
+
+/* Media query for screens with a minimum width of 960px */
+@media (min-width: 960px) {
+  .header {
+    height: 432px;
+    position: relative;
+  }
+  .hero-content {
+    position: absolute;
+    top: 139px;
+    right: 48px;
+    width: 352px;
+    text-align: left;
+  }
+
+  .hero-paragraph {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.25px;
+  }
+
+  .btn-content .btn {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.1px;
+  }
+
+  .main-content {
+    padding: 32px 48px 38px;
+    text-align: center;
+  }
+
+  .paragraph-light span {
+    display: block;
+    padding-top: 12px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1280px */
+@media (min-width: 1280px) {
+  .header {
+    height: 763px;
+  }
+  .hero-content {
+    position: absolute;
+    top: 265px;
+    right: 48px;
+    width: 442px;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 283.119px;
+    height: 58px;
+  }
+
+  .hero-paragraph {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.15px;
+  }
+
+  .btn-content .btn {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.1px;
+  }
+
+  .main-content {
+    padding: 48px 144px;
+    text-align: center;
+  }
+
+  .heading-small {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.15px;
+    text-transform: capitalize;
+  }
+
+  .paragraph-light {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.25px;
+  }
+
+  .paragraph-light span {
+    display: block;
+    padding-top: 16px;
+  }
+
+  .footer {
+    padding: 32px 110px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1600px */
+@media (min-width: 1600px) {
+  .header {
+    height: 1145px;
+  }
+  .hero-content {
+    position: absolute;
+    top: 381px;
+    right: 48px;
+    width: 618px;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 390.509px;
+    height: 80px;
+  }
+
+  .main-content {
+    padding: 48px 226px;
+    text-align: center;
+  }
+}
+
+/* Media query for screens with a minimum width of 1920px */
+@media (min-width: 1920px) {
+  .header {
+    height: 1145px;
+  }
+
+  .main-content {
+    padding: 48px 354px;
+  }
+}

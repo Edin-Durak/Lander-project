@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lander project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        srcset="
+          images/360.png   599w,
+          images/600.png   600w,
+          images/960.png   960w,
+          images/1280.png 1280w,
+          images/1600.png 1600w,
+          images/1920.png 1920w
+        "
+        sizes="100vw"
+        src="images/1920.png"
+        alt="Spase Sheep"
+        class="header-img"
+      />
+    </header>
+    <main class="main-content">
+      <div class="hero-content animate-onload">
+        <img src="images/LOREM.png" alt="Logo" class="hero-im" />
+        <p class="hero-paragraph">
+          Feugiat facilisis tincidunt mauris mi enim dui massa. Lectus cursus
+          convallis nibh euismod vestibulum odio. Dolor ipsum proin quam turpis
+          arcu pharetra augue urna eu. Egestas viverra malesuada aliquet
+          senectus porttitor purus feugiat id lobortis. Orci sed nec quam in
+          ultricies pellentesque porttitor. Vitae enim a ligula.
+        </p>
+        <div class="btn-content">
+          <button class="btn btn-red">Become A Member</button>
+          <button class="btn btn-login">Login</button>
+        </div>
+      </div>
+      <h2 class="heading-small">Mauris Elit Dolor</h2>
+      <p class="paragraph-light">
+        Vel lorem sit sagittis velit. Non vulputate molestie morbi ac aenean
+        ipsum volutpat vitae. Tellus interdum et nunc convallis massa urna.
+        Facilisi amet eu amet viverra semper eget. Ipsum consequat tellus porta
+        sagittis sed felis sagittis varius. Enim non arcu molestie massa.
+        Suspendisse morbi at id vel sed. Ornare amet egestas nunc sed. Lacus
+        feugiat et pharetra et amet odio eu fermentum. Amet ultrices quis
+        imperdiet netus malesuada nec morbi habitasse mauris. Morbi massa
+        malesuada ridiculus pellentesque cursus amet lectus. Maecenas sed
+        vulputate pretium dignissim quisque. Nec vitae eget volutpat elementum
+        phasellus sed ac natoque quis.
+        <span
+          >Imperdiet nibh eu gravida fames nec sodales. Adipiscing arcu nibh
+          pulvinar vestibulum. Netus erat sem faucibus felis. Lobortis sodales
+          egestas arcu egestas nulla.</span
+        >
+      </p>
+    </main>
+    <footer class="footer">
+      <div class="footer-img">
+        <img src="images/rta-light 1.png" alt="rta-light" />
+        <img src="images/katman_1.png" alt="katman" />
+      </div>
+      <div class="footer-links">
+        <a href="#">Placerat</a><span class="pipe">|</span>
+        <a href="#">Vel tellus In Nisl Turpis</a><span class="pipe">|</span>
+        <a href="#">Fusce Id</a><span class="pipe">|</span>
+        <a href="#">Dui Cursus</a>
+      </div>
+      <p class="footer-paragraph">
+        Nibh bibendum auctor ultricies a ac tristique volutpat.
+      </p>
+      <p class="footer-paragraph">
+        Erat eget at et nam pulvinar lorem augue. Scelerisque aenean et aliquet
+        urna libero urna. Hendrerit libero luctus sit tellus vulputate egestas
+        quisque neque tellus. Egestas at blandit amet justo magna aliquet
+        rutrum. In purus diam in pellentesque nunc eleifend.
+      </p>
+      <p class="footer-paragraph">
+        © 2003-2023 LoremIpsum.com Inc. All rights reserved.
+      </p>
+      <p class="footer-paragraph">
+        Proin Mus Ullamcorper proin aliquet augue id quis. Laoreet Nec Ornare
+        turpis sed at.
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth >= 960) {
+          const tl = gsap.timeline();
+
+          tl.from(".hero-im", {
+            opacity: 0,
+            y: 40,
+            duration: 1.5,
+            ease: "power2.out",
+          })
+            .from(".hero-paragraph", {
+              opacity: 0,
+              y: 40,
+              duration: 1,
+              ease: "power2.out",
+            })
+            .from(".btn-content", {
+              opacity: 0,
+              y: 40,
+              duration: 1,
+              ease: "power2.out",
+            });
+        }
+      });
+    </script>
+  </body>
+</html>
