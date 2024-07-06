@@ -16,12 +16,14 @@ Using the code below, I was able to deliver what the client wanted from me.
 ```
 
 With fast delivery time, he was very satisfied with the result.
-You can check the website here: [Lander Project](https://edin-durak.github.io/Lander-project/)
+You can check the website here: https://edin-durak.github.io/Lander-project/
 
 In the images below, you can see the desktop and mobile versions.
 
 Desktop view:
 
+![Lander project]https://github.com/Edin-Durak/Lander-project/assets/138677399/9b8a5149-7e36-4e7c-ad29-c6fcfc220ef8)
 
 Mobile view:
 
+![360px-screen](https://github.com/Edin-Durak/Lander-project/assets/138677399/0f018c64-4539-495a-9895-cc5dd3cdecff)
