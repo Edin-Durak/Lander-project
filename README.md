@@ -22,7 +22,7 @@ In the images below, you can see the desktop and mobile versions.
 
 Desktop view:
 
-![Lander project]https://github.com/Edin-Durak/Lander-project/assets/138677399/9b8a5149-7e36-4e7c-ad29-c6fcfc220ef8)
+![Lander project](https://github.com/Edin-Durak/Lander-project/assets/138677399/9b8a5149-7e36-4e7c-ad29-c6fcfc220ef8)
 
 Mobile view:
 
