@@ -5,14 +5,25 @@ This project was my first Figma to HTML/CSS conversion. The client provided me w
 Using the code below, I was able to deliver what the client wanted from me.
 
 ```html
-<img srcset="
-          images/360.png   599w,
-          images/600.png   600w,
-          images/960.png   960w,
-          images/1280.png 1280w,
-          images/1600.png 1600w,
-          images/1920.png 1920w
-        " sizes="100vw" src="images/1920.png" alt="Space Sheep" class="header-img">
+<img
+  srcset="
+    images/360.png   360w,
+    images/600.png   600w,
+    images/960.png   960w,
+    images/1280.png 1280w,
+    images/1600.png 1600w,
+    images/1920.png 1920w
+  "
+  sizes="(max-width: 599px) 360px,
+(min-width: 600px) and (max-width: 959px) 600px,
+(min-width: 960px) and (max-width: 1279px) 960px,
+(min-width: 1280px) and (max-width: 1599px) 1280px,
+(min-width: 1600px) and (max-width: 1919px) 1600px,
+1920px"
+  src="images/1920.png"
+  alt="Space Sheep"
+  class="header-img"
+/>
 ```
 
 With fast delivery time, he was very satisfied with the result.
